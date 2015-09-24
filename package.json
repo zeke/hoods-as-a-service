@@ -1,5 +1,5 @@
 {
-  "name": "hoods.herokuapp.com",
+  "name": "hoods-as-a-service",
   "version": "1.0.0",
   "description": "Give me a lat/lng and I'll give you a neighborhood (as a service)",
   "main": "server.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeke/hoods.herokuapp.com.git"
+    "url": "git+https://github.com/zeke/hoods-as-a-service.git"
   },
   "keywords": [
     "geo",
@@ -26,9 +26,9 @@
   "author": "zeke",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zeke/hoods.herokuapp.com/issues"
+    "url": "https://github.com/zeke/hoods-as-a-service/issues"
   },
-  "homepage": "https://github.com/zeke/hoods.herokuapp.com#readme",
+  "homepage": "https://github.com/zeke/hoods-as-a-service#readme",
   "dependencies": {
     "hoods": "^1.0.0",
     "router": "^0.6.2"

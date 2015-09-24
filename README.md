@@ -1,3 +1,3 @@
-[placename](https://github.com/substack/placename) as a service.
+[hoods](https://github.com/nom/hoods) as a service.
 
-[placenamer.herokuapp.com](http://placenamer.herokuapp.com/)
+[hoods-as-a-service.herokuapp.com](http://hoods-as-a-service.herokuapp.com)
