@@ -1,0 +1,68 @@
+<style type="text/css">
+  body {
+    font-family: monospace;
+    font-size: 18px;
+    padding: 20px;
+    text-transform: lowercase;
+    line-height: 1.6;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  a:visited {
+    color: #AAA;
+  }
+</style>
+
+<h2>hoods</h2>
+
+<p>
+  Give me a lat/lng and I'll give you a neighborhood.
+</p>
+
+<h2>Example Queries</h2>
+
+<p>
+  <a href="/?lng=-122.446747&lat=37.733795">San Francisco</a><br>
+  <a href="/?lng=-90.132093&lat=29.934436">New Orleans</a><br>
+</p>
+
+<h2>Your hood</h2>
+
+<p id="loc">
+Just a sec while I look it up...
+</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+
+    if (!navigator.geolocation) {
+      $("#loc").text('geolocation not supported by this browser :(')
+      return
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      function (position) {
+        var lat = position.coords.latitude
+        var lng = position.coords.longitude
+        $.getJSON("/?lng="+lng+"&lat="+lat, function(data){
+          console.log(data)
+          if (data && data.length) {
+            var hood = data[0];
+            $("#loc").text([hood.name, hood.city, hood.county, hood.state].join(", "))
+          }
+        })
+      },
+      console.error
+    )
+
+  })
+</script>

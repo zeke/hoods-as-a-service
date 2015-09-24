@@ -1,0 +1,36 @@
+{
+  "name": "hoods.herokuapp.com",
+  "version": "1.0.0",
+  "description": "Give me a lat/lng and I'll give you a neighborhood (as a service)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeke/hoods.herokuapp.com.git"
+  },
+  "keywords": [
+    "geo",
+    "gis",
+    "location",
+    "geolocation",
+    "people",
+    "humanity",
+    "cities",
+    "maps",
+    "cartography",
+    "place",
+    "subjectivity"
+  ],
+  "author": "zeke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeke/hoods.herokuapp.com/issues"
+  },
+  "homepage": "https://github.com/zeke/hoods.herokuapp.com#readme",
+  "dependencies": {
+    "hoods": "^1.0.0",
+    "router": "^0.6.2"
+  }
+}
